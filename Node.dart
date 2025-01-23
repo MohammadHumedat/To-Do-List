@@ -15,7 +15,15 @@ class Node {
     pointer.next = Node(newtask);
   }
 
-  
-
-
+  void printnodes(Node head) {
+    Node pointer = head;
+    if (pointer.next == null) {
+      print(pointer.tske.task);
+    } else {
+      while (pointer.next != null) {
+        print(pointer.tske.task);
+        pointer = pointer.next!;
+      }
+    }
+  }
 }
